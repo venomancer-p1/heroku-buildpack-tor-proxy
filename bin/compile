@@ -45,7 +45,7 @@ if [ -z "$TOR_VERSION" ]; then
   TOR_SRC_NAME=tor-${TOR_VERSION}.tar.gz
 else
   TOR_SRCH="tor-0\.4\.7\.8\.tar\.gz"
-  TOR_SRC_NAME=$(curl -s "$TOR_DIST_URL" | grep -o -e "$TOR_SRCH" | sort | tail -1)
+  TOR_SRC_NAME="tor-0.4.7.8.tar.gz"
 fi
 
 if [ -z "$TOR_CONTROL_PASS" ]; then
