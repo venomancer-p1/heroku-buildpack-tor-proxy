@@ -113,7 +113,7 @@ fi
 ################################################################################
 if [ $IS_TOR_CACHED -eq 0 ] ; then
     tar -zxf "$TOR_SRC_NAME"
-    cd "tor-${TOR_VER}" || echo "FAILED to configure Tor"
+    cd "tor-0.4.6.9" || echo "FAILED to configure Tor"
 
     ./configure --prefix="${HEROKU_CACHE_DIR}/tor"
     if [ $? -ne 0 ]; then
