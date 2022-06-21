@@ -2,6 +2,8 @@
 
 This buildpack sets up a Tor Proxy for your app on Heroku.
 
+./tor/bin/run_tor_proxy
+
 ## Setup
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
