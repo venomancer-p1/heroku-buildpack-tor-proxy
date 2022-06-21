@@ -147,7 +147,7 @@ cat > "${HEROKU_BUILD_DIR}/tor/bin/${TOR_COMMAND}" <<EOF
 
 echo "Setting up the control server"
 
-echo "SocksPort 9060\nSocksPort 9061\nSocksPort 9062\nSocksPort 9063\nSocksPort 9064\nSocksPort 9065" >> "${HOME}/tor/etc/tor/torrc"
+echo -e "SocksPort 9060\nSocksPort 9061\nSocksPort 9062\nSocksPort 9063\nSocksPort 9064\nSocksPort 9065" >> "${HOME}/tor/etc/tor/torrc"
 echo "HashedControlPassword ${TOR_HASHED_PASS}" >> "${HOME}/tor/etc/tor/torrc"
 
 "${HOME}/tor/bin/tor" -f "${HOME}/tor/etc/tor/torrc" &
